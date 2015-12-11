@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+%font-base {
+    color: map-get($colors, "font-base");
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+}
+%font-heading {
+    color: map-get($colors, "white-normal");
+    font-family: "ArialNarrowRegular";
+    font-variant: normal;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+}

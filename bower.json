@@ -1,0 +1,25 @@
+{
+  "name": "zamkoff",
+  "description": "Landing. Вскрытие и замена замков",
+  "main": "index.html",
+  "authors": [
+    "Ilya Purouski"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "animate.css": "~3.4.0",
+    "jquery": "~2.1.4",
+    "jquery-prettyPhoto": "~3.1.6",
+    "bootstrap": "~3.3.6"
+  }
+}

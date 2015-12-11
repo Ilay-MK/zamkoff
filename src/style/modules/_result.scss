@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.result {
+    bottom: 0;
+    display: none;
+    /*opacity: 0;*/
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 300ms ease;
+    width: 100%;
+    z-index: 999;
+
+    @extend .overlay70;
+    margin: 0px;
+
+    .mess {
+        display: none;
+        font-size: 1.2em;
+        margin: 5% auto 0;
+        max-width: 50%;
+        /* height: 76px; */
+        padding: 20px;
+        text-align: center;
+    }
+}
