@@ -19,13 +19,10 @@
         }
     }
 
-    .price-colume {
-        padding: 0px;
-    }
-
     .tbl_price {
+        display: inline-block;
+        margin: 30px 26px 0 0;
         width: 280px;
-        margin: 30px 0;
 
         &--title {
             background-color: map-get($colors, "cbgd");
