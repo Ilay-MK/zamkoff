@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 $colors: (
-    "$chl": $corp-heading_on_lighen,
-    "$chd": $corp-heading_on_darken,
+    "chl": $corp-heading_on_lighen,
+    "chd": $corp-heading_on_darken,
     "cl": $corp-label
 );
+
+$corporate-border-verticle: map-get($colors, "cl") 5px solid;
+$corporate-border-horizontal: map-get($colors, "cl") 2px solid;

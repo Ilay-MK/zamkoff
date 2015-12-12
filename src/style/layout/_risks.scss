@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#risks {
+    background-color: map-get($colors, "chl");
+    color: map-get($colors, "chd");
+
+    .risk {
+        width: 273px;
+
+        .icon {
+            img {
+                height: 47px;
+                width: 40px;
+            }
+        }
+
+        h3 {
+            margin: 31px 0 23px;
+        }
+
+        .desc {
+            p {
+                line-height: 21px;
+            }
+        }
+    }
+}

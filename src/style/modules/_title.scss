@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.title {
+    border-left: $corporate-border-verticle;
+    padding-left: 10px;
+    margin-bottom: 70px;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+
+        span {
+            display: block;
+            font-size: 12px;
+        }
+    }
+}
