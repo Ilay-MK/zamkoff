@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+.opening {
+
+
+    .visual {
+        border: map-get($colors, "cl") 8px solid;
+        display: inline-block;
+        height: 350px;
+        vertical-align: middle;
+        width: 265px;
+
+        img {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .services {
+        display: inline-block;
+        margin-left: 22px;
+        vertical-align: middle;
+
+        .service {
+            background-color: #f2f2f2; /* map-get($colors, "chd");*/
+            display: inline-block;
+            margin: 4px 2px;
+            padding: 17px 11px;
+            text-align: center;
+            width: 209px;
+
+            .icon {
+                margin: 10px 0px 23px;
+
+                img {
+                    display: block;
+                    height: 44px;
+                    margin: 0 auto;
+                    padding: 0;
+                    width: 29px;
+                }
+            }
+
+            h3 {
+                @extend %font-base;
+                font-size: 12px;
+                font-weight: bold;
+                margin: 23px 0px 8px;
+            }
+
+            .desc {
+
+                p {
+                    @extend %font-base;
+                    font-size: 12px;
+                    margin: 0;
+                    text-transform: lowercase;
+                }
+            }
+        }
+    }
+}
