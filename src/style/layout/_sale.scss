@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+#sale {
+    background-color: map-get($colors, "chl");
+    color: map-get($colors, "chd");
+
+    .visual {
+        margin-bottom: -6.428571428571429em;
+        text-align: right;
+
+        img {
+            margin-right: 42px;
+        }
+    }
+
+    .sb {
+        margin-left: 30px;
+
+        .title {
+            margin-bottom: 20px;
+
+            h2 {
+
+                span.color_key {
+
+                    color: map-get($colors, "cl");
+                }
+            }
+        }
+
+        .desc {
+
+            p {
+
+            }
+        }
+    }
+}
