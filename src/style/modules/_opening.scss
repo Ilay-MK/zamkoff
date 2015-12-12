@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .opening {
-
+    overflow: hidden;
 
     .visual {
         border: map-get($colors, "cl") 8px solid;
@@ -12,13 +12,52 @@
 
         img {
             margin: 0;
+            /*max-height: 334px;
+            max-width: 249px;*/
             padding: 0;
+
+            /* Medium Devices, Desktops */
+            @media only screen and (max-width : 991px) {
+                width: 100%; /*100%*/
+            }
+
+            /* Medium Devices, Desktops */
+            @media only screen and (max-width : 768px) {
+                /*border-bottom: map-get($colors, "cl") 8px solid;*/
+                outline: map-get($colors, "cl") 8px solid;
+                height: 706px;
+            }
+
+            /* Medium Devices, Desktops */
+            @media only screen and (max-width : 694px) {
+                height: 876px;
+            }
+
+            /* Medium Devices, Desktops */
+            @media only screen and (max-width : 478px) {
+                height: 334px;
+                outline: none;
+            }
+        }
+
+        /* Medium Devices, Desktops */
+        @media only screen and (max-width : 991px) {
+            display: block;
+            margin: 0 auto;
+            width: 658px; /*100%*/
+        }
+
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 700px) {
+            width: 100%;
         }
     }
 
     .services {
         display: inline-block;
         margin-left: 22px;
+        max-width: 648px; // это вставил и сделал в одну строку
+        text-align: center;
         vertical-align: middle;
 
         .service {
@@ -57,6 +96,12 @@
                     text-transform: lowercase;
                 }
             }
+        }
+
+        /* Medium Devices, Desktops */
+        @media only screen and (max-width : 991px) {
+            display: block;
+            margin: 20px auto 0;
         }
     }
 }

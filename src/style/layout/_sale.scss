@@ -10,6 +10,24 @@
 
         img {
             margin-right: 42px;
+
+            /* Medium Devices, Desktops */
+            @media only screen and (max-width : 991px) {
+                margin-bottom: 0;
+            }
+
+            /* Medium Devices, Desktops */
+            @media only screen and (max-width : 768px) {
+                margin: 0;
+                max-width: 332px;
+                width: 100%;
+            }
+        }
+
+        /* Medium Devices, Desktops */
+        @media only screen and (max-width : 768px) {
+            margin-bottom: 0;
+            text-align: center;
         }
     }
 
