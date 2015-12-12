@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+#belt {
+    background-color: map-get($colors, "cl");
+    padding: 20px 0;
+    position: relative;
+
+    .working {
+        font-family: 'HelveticaNeue-Light';
+        line-height: 24px;
+
+        .hours {
+            color: map-get($colors, "chd");;
+            display: inline-block;
+            font-size: 50px;
+            margin-right: 26px;
+            margin-bottom: 32px;
+            vertical-align: bottom;
+        }
+
+        .days {
+            display: inline-block;
+            margin: 10px 0 12px;
+            vertical-align: top;
+
+            p {
+                color: map-get($colors, "chd");;
+                font-size: 20px;
+                margin: 0;
+
+                .circle {
+                    display: inline-block;
+                    border-radius: 50%;
+                    background-color: map-get($colors, "chd");
+                    height: 8px;
+                    vertical-align: middle;
+                    width: 8px;
+                }
+
+                &:last-child {
+                    margin-left: 22px;
+                    margin-top: 38px;
+                }
+            }
+        }
+    }
+
+    .guarantees {
+        margin-left: 30px;
+        position: relative;
+        width: 290px;
+        z-index: 3;
+
+        h2 {
+            font-size: 37px;
+            line-height: 32px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .desc {
+            margin-top: 30px;
+
+            img {
+                float: left;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .line_light {
+        background-color: map-get($colors, "chd");
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        z-index: 2;
+    }
+}
