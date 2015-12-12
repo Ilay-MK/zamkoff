@@ -10,7 +10,7 @@
         line-height: 24px;
 
         .hours {
-            color: map-get($colors, "chd");;
+            color: map-get($colors, "chl");;
             display: inline-block;
             font-size: 50px;
             margin-right: 26px;
@@ -36,14 +36,14 @@
             vertical-align: top;
 
             p {
-                color: map-get($colors, "chd");;
+                color: map-get($colors, "chl");;
                 font-size: 20px;
                 margin: 0;
 
                 .circle {
                     display: inline-block;
                     border-radius: 50%;
-                    background-color: map-get($colors, "chd");
+                    background-color: map-get($colors, "chl");
                     height: 8px;
                     vertical-align: middle;
                     width: 8px;
@@ -79,13 +79,16 @@
     }
 
     .guarantees {
+        color: map-get($colors, "cbd");
         margin-left: 30px;
         position: relative;
         width: 290px;
         z-index: 3;
 
         h2 {
+            font-family: 'HelveticaNeue-Regular', "Helvetica Neue";
             font-size: 37px;
+            font-weight: normal;
             line-height: 32px;
             margin: 0;
             padding: 0;
@@ -122,7 +125,7 @@
 
         /* Medium Devices, Desktops */
         @media only screen and (max-width : 768px) {
-            border-top: map-get($colors, "chd") 1px solid;
+            border-top: map-get($colors, "chl") 1px solid;
             margin: 10px auto 0;
             padding-top: 10px;
             text-align: center;
@@ -130,7 +133,7 @@
     }
 
     .line_light {
-        background-color: map-get($colors, "chd");
+        background-color: map-get($colors, "chl");
         bottom: 0;
         position: absolute;
         right: 0;

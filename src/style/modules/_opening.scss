@@ -61,7 +61,7 @@
         vertical-align: middle;
 
         .service {
-            background-color: #f2f2f2; /* map-get($colors, "chd");*/
+            background-color: map-get($colors, "cbge");
             display: inline-block;
             margin: 4px 2px;
             padding: 17px 11px;
@@ -82,6 +82,7 @@
 
             h3 {
                 @extend %font-base;
+                color: map-get($colors, "chd");
                 font-size: 12px;
                 font-weight: bold;
                 margin: 23px 0px 8px;
@@ -91,6 +92,7 @@
 
                 p {
                     @extend %font-base;
+                    color: map-get($colors, "cbd");
                     font-size: 12px;
                     margin: 0;
                     text-transform: lowercase;

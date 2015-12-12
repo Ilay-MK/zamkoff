@@ -1,9 +1,14 @@
 @charset "UTF-8";
 
 $colors: (
-    "chl": $corp-heading_on_lighen,
-    "chd": $corp-heading_on_darken,
-    "cl": $corp-label
+    "chl": $corp-heading-lighen,
+    "chd": $corp-heading-darken,
+    "cl": $corp-label,
+    "cbl": $corp-base-lighten,
+    "cbd": $corp-base-darken,
+    "cbgl": $corp-bg-lighten,
+    "cbgd": $corp-bg-darken,
+    "cbge": $corp-bg-element,
 );
 
 $corporate-border-verticle: map-get($colors, "cl") 5px solid;

@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
 #risks {
-    background-color: map-get($colors, "chl");
-    color: map-get($colors, "chd");
+    background-color: map-get($colors, "cbgd");
+    color: map-get($colors, "chl");
+
+    .title {
+        margin-bottom: 70px;
+    }
 
     .risk {
         width: 273px;
@@ -20,6 +24,7 @@
 
         .desc {
             p {
+                color: map-get($colors, "cbl");
                 line-height: 21px;
             }
         }

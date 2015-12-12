@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 #sale {
-    background-color: map-get($colors, "chl");
-    color: map-get($colors, "chd");
+    background-color: map-get($colors, "cbgd");
+    color: map-get($colors, "cbd");
 
     .visual {
         margin-bottom: -6.428571428571429em;
@@ -47,7 +47,7 @@
         }
 
         .desc {
-
+            color: map-get($colors, "cbl");
             p {
 
             }
