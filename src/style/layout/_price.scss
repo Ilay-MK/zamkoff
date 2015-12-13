@@ -74,5 +74,10 @@
                 text-transform: uppercase;
             }
         }
+
+        .order_btn {
+            background-color: map-get($colors, "cbge");
+            padding: 3px 30px 30px 30px;
+        }
     }
 }

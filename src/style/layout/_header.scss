@@ -1,5 +1,142 @@
 @charset "UTF-8";
 
 #header {
+    color: map-get($colors, "chd");
 
+    .top {
+        margin-top: 55px;
+
+        .logo {
+
+
+            p {
+                @extend h2;
+                font-size: 22px;
+                line-height: 28px;
+                margin: 0;
+                padding: 0;
+
+                img {
+                    vertical-align: top;
+                }
+            }
+
+            .desc {
+
+
+                p {
+                    font-family: 'HelveticaNeue-Regular';
+                    font-size: 12px;
+                    font-weight: normal;
+                    line-height: 14px;
+                    margin: 0;
+                    padding: 0;
+                    text-transform: none;
+                }
+            }
+        }
+
+        .nav-block {
+            display: inline-block;
+            margin-top: 20px;
+            vertical-align: top;
+
+            ul {
+                font-family: "OpenSansBold";
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+
+                    a {
+                        color: map-get($colors, "chd");
+                        font-size: 14px;
+                        margin: 0;
+                        padding: 0 12px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            /*outline: red 1px solid;*/
+                        }
+                    }
+                }
+            }
+        }
+
+        .phone-block {
+            display: inline-block;
+            margin-left: 12px;
+            margin-top: 22px;
+            vertical-align: top;
+
+            .order_call {
+                font-size: 8px;
+                text-align: center;
+
+                a {
+                    color: map-get($colors, "cbd");
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .header-content {
+        background-image: url(../img/header/lock.jpg);
+        background-repeat: no-repeat;
+        background-position: 100% 10%;
+
+        .descripter {
+            margin: 0;
+
+            h1 {
+                margin: 115px 0 23px 0;
+                width: 575px;
+            }
+
+            a {
+
+                &.btn {
+
+                }
+            }
+        }
+
+        .bottom_line {
+            margin: 96px 0 0 0;
+
+            &--block {
+
+                > div {
+                    background-color: map-get($colors, "cbgd");
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    /*display: inline-block;*/
+                    float: left;
+                    height: 100px;
+                    margin-right: 16px;
+                    width: 100px;
+
+                    &:nth-child(1) {
+                        background-image: url(../img/header/bottom-line/door.png);
+                    }
+                    &:nth-child(2) {
+                        background-image: url(../img/header/bottom-line/car.png);
+                    }
+                    &:nth-child(3) {
+                        background-image: url(../img/header/bottom-line/safe.png);
+                    }
+                    &:nth-child(4) {
+                        background-image: url(../img/header/bottom-line/key.png);
+                    }
+                }
+            }
+        }
+    }
 }

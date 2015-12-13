@@ -33,6 +33,7 @@
 
     .sb {
         margin-left: 30px;
+        width: 415px;
 
         .title {
             margin-bottom: 20px;
@@ -41,13 +42,14 @@
 
                 span.color_key {
 
-                    color: map-get($colors, "cl");
                 }
             }
         }
 
         .desc {
             color: map-get($colors, "cbl");
+            margin-bottom: 22px;
+
             p {
 
             }

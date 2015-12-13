@@ -1,5 +1,128 @@
 @charset "UTF-8";
 
 #footer {
+    background-color: map-get($colors, "cbgd");
+    color: map-get($colors, "cbl");
+    padding: 60px 0;
+
+    .footer--block {
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+
+        h3 {
+            color: map-get($colors, "chl");
+            border-bottom: $corporate-border-horizontal;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 10px;
+            margin: 0 0 33px 0;
+            padding: 0 0 16px 0;
+        }
+
+        ul {
+            list-style-position: outside;
+            margin: 0px;
+            padding: 0 0 0 15px;
+
+            li {
+                margin-bottom: 18px;
+                padding-left: 6px;
+            }
+        }
+
+        &--content {
+
+        }
+
+        &.about {
+            width: 300px;
+
+            .logo {
+                margin-bottom: 18px;
+
+                p {
+                    @extend h2;
+                    font-size: 22px;
+                    line-height: 28px;
+                    margin: 0;
+                    padding: 0;
+
+                    img {
+                        vertical-align: top;
+                    }
+                }
+            }
+
+            .soc-block {
+                margin-top: 18px;
+
+                a {
+                    margin: 0 10px 0 0;
+                    vertical-align: bottom;
+                }
+            }
+        }
+
+        &.navigation {
+            width: 375px;
+
+            nav {
+                display: inline-block;
+                margin-right: 28px;
+
+                ul {
+                    list-style-image: url(../img/footer/nav/arrow.png);
+
+                    li {
+
+                    }
+                }
+            }
+        }
+
+        &.contacts {
+
+            ul {
+                list-style: none;
+                margin: -5px 0 0;
+                padding: 0;
+
+                li {
+                    /*margin-bottom: 10px;*/
+                    /*margin-top: -7px;*/
+                    display:block;
+                    margin-bottom: 8px;
+                    padding: 5px 0px 5px 45px;
+
+                    &:nth-child(1) {
+                        /*list-style-image: url(../img/footer/contacts/location.png);*/
+                        background: url(../img/footer/contacts/location.png) no-repeat 0 50%;
+                    }
+                    &:nth-child(2) {
+                        /*list-style-image: url(../img/footer/contacts/phone.png);*/
+                        background: url(../img/footer/contacts/phone.png) no-repeat 0 50%;
+                    }
+                    &:nth-child(3) {
+                        /*list-style-image: url(../img/footer/contacts/letter.png);*/
+                        background: url(../img/footer/contacts/letter.png) no-repeat 0 50%;
+                    }
+                    &:nth-child(4) {
+                        /*list-style-image: url(../img/footer/contacts/old_phone.png);*/
+                        background: url(../img/footer/contacts/old_phone.png) no-repeat 0 50%;
+                    }
+                    &:nth-child(5) {
+                        /*list-style-image: url(../img/footer/contacts/clock.png);*/
+                        background: url(../img/footer/contacts/clock.png) no-repeat 0 50%;
+                    }
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
 
 }
