@@ -2,7 +2,8 @@
 
 /* Custom */
 @include placeholder {
-    color: map-get($colors, "placeholder");
+    color: map-get($colors, "cbl");
+    @extend %font-base;
     opacity: 1;
 }
 /* / Custom */

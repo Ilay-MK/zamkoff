@@ -2,7 +2,7 @@
 
 input {
     border-width: 1px;
-    /*border-color: map-get($colors, "border");*/
+    border-color: map-get($colors, "cbl");
     border-radius: 0.3em; /*3px;*/
     border-style: solid;
     /*background-color: map-get($colors, "white-normal");*/
@@ -12,10 +12,10 @@ input {
     vertical-align: middle;
 
     /* Стиль текста */
-    /*color: map-get($colors, "input");*/
-    font-size: 1.3em; //18px /*16*/
-    font-family: "Arial";
-    line-height: 1.5;
+    color: map-get($colors, "cbd");
+    /*font-size: 1.3em; //18px //16*/
+    /*font-family: "Arial";
+    line-height: 1.5;*/
 
     &:focus {
         border-width: 2px;

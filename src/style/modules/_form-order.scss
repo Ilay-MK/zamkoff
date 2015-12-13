@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.form-order {
+    background-color: map-get($colors, "cbgl");
+    color: #000;
+    height: 322px;
+    padding: 45px;
+    width: 500px;
+    outline: red 1px solid;
+
+    &--title {
+        margin: 0 0 23px 0;
+
+        h4 {
+            @extend %font-base;
+            color: #000;
+            font-size: 24px;
+            line-height: 20px;
+            margin: 0;
+            padding: 0;
+            text-transform: none;
+        }
+    }
+
+    &--inputs {
+        margin: 10px 0;
+
+        input {
+            margin: 10px 0;
+            padding: 24px 22px;
+            width: 100%;
+        }
+    }
+
+    &--submit {
+        margin: 0;
+
+        .txt {
+            color: map-get($colors, "cbd");
+            display: inline-block;
+            margin: 16px 0 0;
+        }
+
+        button[type="submit"] {
+            color: map-get($colors, "chd");
+            background-color: map-get($colors, "cl");
+            height: auto;
+            font-family: 'HelveticaNeue-Bold';
+            font-size: 14px;
+            font-weight: bold;
+            float: right;
+            line-height: 33px;
+            margin: 0;
+            text-transform: none;
+            width: 135px;
+        }
+    }
+}
