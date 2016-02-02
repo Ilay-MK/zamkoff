@@ -9,30 +9,39 @@
         .logo {
 
 
-            p {
+            .logo {
                 @extend h2;
+                
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                .site_name {
+                    
+                }
+                
                 font-size: 22px;
                 line-height: 28px;
                 margin: 0;
                 padding: 0;
 
                 img {
+                    margin-right: 3px;
                     vertical-align: top;
                 }
             }
 
-            .desc {
-
-
-                p {
-                    font-family: 'HelveticaNeue-Regular';
+            .desc p {
+                    //font-family: 'HelveticaNeue-Regular';
+                    @extend %font-base;
+                    color: map-get($colors, "cbd");
                     font-size: 12px;
                     font-weight: normal;
                     line-height: 14px;
                     margin: 0;
                     padding: 0;
                     text-transform: none;
-                }
             }
         }
 
@@ -42,7 +51,8 @@
             vertical-align: top;
 
             ul {
-                font-family: "OpenSansBold";
+                //font-family: "OpenSansBold";
+                @extend %font-nav;
                 list-style: none;
                 margin: 0;
                 padding: 0;
@@ -53,7 +63,7 @@
                     padding: 0;
 
                     a {
-                        color: map-get($colors, "chd");
+                        color: map-get($colors, "cbgd");
                         font-size: 14px;
                         margin: 0;
                         padding: 0 12px;
@@ -62,6 +72,7 @@
 
                         &:hover {
                             /*outline: red 1px solid;*/
+                            color: map-get($colors, "cl");
                         }
                     }
                 }
@@ -69,13 +80,21 @@
         }
 
         .phone-block {
+            @extend %font-nav;
+            color: map-get($colors, "cbgd");
+            font-size: 13px;
+            
             display: inline-block;
             margin-left: 12px;
-            margin-top: 22px;
+            margin-top: 20px;
             vertical-align: top;
+            
+            .phone {
+                margin-bottom: 3px;
+            }
 
             .order_call {
-                font-size: 8px;
+                font-size: 9px;
                 text-align: center;
 
                 a {
@@ -90,13 +109,15 @@
     .header-content {
         background-image: url(../img/header/lock.jpg);
         background-repeat: no-repeat;
-        background-position: 100% 10%;
+        background-position: 100% 30%; //100% 10%;
+        background-size: 30%;
 
         .descripter {
             margin: 0;
 
             h1 {
                 margin: 115px 0 23px 0;
+                line-height: 36px;
                 width: 575px;
             }
 

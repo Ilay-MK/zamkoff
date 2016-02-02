@@ -17,7 +17,7 @@ function sendMail($mes)
 	$mail->Password   = "Ohgee4ai";
 	$mail->From       = "no-reply@zae-box.by";                                     // $mes["email"];
     $mail->CharSet	  = "utf-8";
-	$mail->FromName   = "Сообщение с сайта | opt.signal-lenta.by";                 // $mes["name"]."| domain | ".$type;
+	$mail->FromName   = "Сообщение с сайта | zamkoff.by";                          // $mes["name"]."| domain | ".$type;
 	$mail->Subject    = "Поступила новая заявка!";                                 // "Поступил новый ".$type;
 	$mail->AltBody    = "This is the body when user views in plain text format";   // Text Body
 	$mail->WordWrap   = 50;                                                        // set word wrap
@@ -26,7 +26,7 @@ function sendMail($mes)
 						<div style="font-size: 2em; margin: 5px 0px"">Телефон: '.$mes["phone"].'</div>
                         <div style="color: gray; margin: 20px 0px">'.$mes["from_section"].'</div>
 						';
-    $titleReplyTo = "Ответ на Вашу заявку с сайта [opt.signal-lenta.by]";
+    $titleReplyTo = "Ответ на Вашу заявку с сайта [zamkoff.by]";
 
 	/*$mail->AddReplyTo($mes["email"], $mes["name"]);*/ // "mail@domain","Webmaster"
 	//$mail->AddAddress("mail@","О Величайший Мастер");

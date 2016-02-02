@@ -6,11 +6,13 @@
     position: relative;
 
     .working {
-        font-family: 'HelveticaNeue-Light';
+        //font-family: 'HelveticaNeue-Light';
+        @extend %font-base-secondary;
         line-height: 24px;
+        text-align: right;
 
         .hours {
-            color: map-get($colors, "chl");;
+            color: map-get($colors, "chl");
             display: inline-block;
             font-size: 50px;
             margin-right: 26px;
@@ -18,21 +20,22 @@
             vertical-align: bottom;
 
             /* Medium Devices, Desktops */
-            @media only screen and (max-width : 991px) {
+            /*@media only screen and (max-width : 991px) {
                 margin-right: 15px;
-            }
+            }*/
 
             /* Extra Small Devices, Phones */
-            @media only screen and (max-width : 770px) {
+            /*@media only screen and (max-width : 770px) {
                 display: block;
                 margin-right: 0;
                 width: 100%;
-            }
+            }*/
         }
 
         .days {
             display: inline-block;
-            margin: 10px 0 12px;
+            margin: 10px 30px 12px 0;
+            text-align: left;
             vertical-align: top;
 
             p {
@@ -51,31 +54,31 @@
 
                 &:last-child {
                     margin-left: 22px;
-                    margin-top: 38px;
+                    margin-top: 48px;
 
                     /* Extra Small Devices, Phones */
-                    @media only screen and (max-width : 770px) {
+                    /*@media only screen and (max-width : 770px) {
                         margin: 0;
-                    }
+                    }*/
                 }
 
                 /* Extra Small Devices, Phones */
-                @media only screen and (max-width : 770px) {
+                /*@media only screen and (max-width : 770px) {
                     margin: 0;
-                }
+                }*/
             }
 
             /* Extra Small Devices, Phones */
-            @media only screen and (max-width : 770px) {
+            /*@media only screen and (max-width : 770px) {
                 display: block;
                 width: 100%;
-            }
+            }*/
         }
 
         /* Extra Small Devices, Phones */
-        @media only screen and (max-width : 770px) {
+        /*@media only screen and (max-width : 770px) {
             text-align: center;
-        }
+        }*/
     }
 
     .guarantees {
@@ -85,51 +88,53 @@
         width: 290px;
         z-index: 3;
 
-        h2 {
-            font-family: 'HelveticaNeue-Regular', "Helvetica Neue";
+        p {
+            //font-family: 'HelveticaNeue-Regular', "Helvetica Neue";
             font-size: 37px;
             font-weight: normal;
             line-height: 32px;
             margin: 0;
             padding: 0;
+            text-transform: uppercase;
         }
 
         .desc {
             margin-top: 30px;
+            line-height: 16px;
 
             img {
                 float: left;
                 margin-right: 20px;
 
                 /* Medium Devices, Desktops */
-                @media only screen and (max-width : 768px) {
+                /*@media only screen and (max-width : 768px) {
                     clear: both;
                     display: block;
                     float: none;
                     margin: 0 auto;
-                }
+                }*/
             }
 
             /* Medium Devices, Desktops */
-            @media only screen and (max-width : 768px) {
+            /*@media only screen and (max-width : 768px) {
                 margin: 10px auto;
                 text-align: center;
-            }
+            }*/
         }
 
         /* Medium Devices, Desktops */
-        @media only screen and (max-width : 991px) {
+        /*@media only screen and (max-width : 991px) {
             margin-left: 15px;
             width: 100%;
-        }
+        }*/
 
         /* Medium Devices, Desktops */
-        @media only screen and (max-width : 768px) {
+        /*@media only screen and (max-width : 768px) {
             border-top: map-get($colors, "chl") 1px solid;
             margin: 10px auto 0;
             padding-top: 10px;
             text-align: center;
-        }
+        }*/
     }
 
     .line_light {
@@ -143,9 +148,9 @@
 
 
         /* Medium Devices, Desktops */
-        @media only screen and (max-width : 768px) {
+        /*@media only screen and (max-width : 768px) {
             display: none;
             z-index: -1;
-        }
+        }*/
     }
 }

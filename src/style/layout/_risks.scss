@@ -19,6 +19,7 @@
         }
 
         h3 {
+            color: map-get($colors, "chl");
             margin: 31px 0 23px;
         }
 
@@ -30,20 +31,20 @@
         }
 
         /* Medium Devices, Desktops */
-        @media only screen and (max-width : 991px) {
+        /*@media only screen and (max-width : 991px) {
             width: 215px;
-        }
+        }*/
 
         /* Small Devices, Tablets */
-        @media only screen and (max-width : 767px) {
+        /*@media only screen and (max-width : 767px) {
             margin: 0 auto;
             text-align: center;
             width: 70%;
-        }
+        }*/
 
         /* Small Devices, Tablets */
-        @media only screen and (max-width : 555px) {
+        /*@media only screen and (max-width : 555px) {
             width: 100%;
-        }
+        }*/
     }
 }

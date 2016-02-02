@@ -17,40 +17,40 @@
             padding: 0;
 
             /* Medium Devices, Desktops */
-            @media only screen and (max-width : 991px) {
-                width: 100%; /*100%*/
-            }
+            /*@media only screen and (max-width : 991px) {
+                width: 100%; //100%
+            }*/
 
             /* Medium Devices, Desktops */
-            @media only screen and (max-width : 768px) {
-                /*border-bottom: map-get($colors, "cl") 8px solid;*/
+            /*@media only screen and (max-width : 768px) {
+                //border-bottom: map-get($colors, "cl") 8px solid;
                 outline: map-get($colors, "cl") 8px solid;
                 height: 706px;
-            }
+            }*/
 
             /* Medium Devices, Desktops */
-            @media only screen and (max-width : 694px) {
+            /*@media only screen and (max-width : 694px) {
                 height: 876px;
-            }
+            }*/
 
             /* Medium Devices, Desktops */
-            @media only screen and (max-width : 478px) {
+            /*@media only screen and (max-width : 478px) {
                 height: 334px;
                 outline: none;
-            }
+            }*/
         }
 
         /* Medium Devices, Desktops */
-        @media only screen and (max-width : 991px) {
+        /*@media only screen and (max-width : 991px) {
             display: block;
             margin: 0 auto;
-            width: 658px; /*100%*/
-        }
+            width: 658px; //100%
+        }*/
 
         /* Extra Small Devices, Phones */
-        @media only screen and (max-width : 700px) {
+        /*@media only screen and (max-width : 700px) {
             width: 100%;
-        }
+        }*/
     }
 
     .services {
@@ -64,7 +64,8 @@
             background-color: map-get($colors, "cbge");
             display: inline-block;
             margin: 4px 2px;
-            padding: 17px 11px;
+            /*padding: 17px 11px;*/
+            padding: 15px 10px; //11px
             text-align: center;
             width: 209px;
 
@@ -80,11 +81,16 @@
                 }
             }
 
-            h3 {
-                @extend %font-base;
+            h3 {                
                 color: map-get($colors, "chd");
+                font-family: 'HelveticaRegular', 'HelveticaNeue-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-style: normal;
                 font-size: 12px;
-                font-weight: bold;
+                font-variant: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.25px;
+                
                 margin: 23px 0px 8px;
             }
 
@@ -101,9 +107,9 @@
         }
 
         /* Medium Devices, Desktops */
-        @media only screen and (max-width : 991px) {
+        /*@media only screen and (max-width : 991px) {
             display: block;
             margin: 20px auto 0;
-        }
+        }*/
     }
 }

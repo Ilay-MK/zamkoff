@@ -16,6 +16,9 @@
     margin: 0px;
 
     .mess {
+    background-color: map-get($colors, "cbgd");
+    color: map-get($colors, "chl");
+        border: map-get($colors, "chl") 1px solid;
         display: none;
         font-size: 1.2em;
         margin: 5% auto 0;

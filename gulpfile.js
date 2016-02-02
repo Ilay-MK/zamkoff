@@ -329,20 +329,19 @@ gulp.task('useref', function () {
         .pipe(notify('Useref Done!'));
 });
 
-
 /* ------------------------------------------------------- */
 
 // Uncss
 // Подправить пути .................... !!!!!!!!!!!!!!!!
 gulp.task('uncss', function () {
-    return gulp.src(path.build.searchCSS)
+    return gulp.src('build/css/main.css')
         .pipe(uncss({
-            html: [path.build.searchHTML]
+            html: ['build/index.html']
         }))
-        .pipe(minifyCss({
+        /*.pipe(minifyCss({
             compatibility: 'ie8'
-        }))
-        .pipe(gulp.dest(path.build.css))
+        }))*/
+        .pipe(gulp.dest('build/out'))
         .pipe(notify('UnCSS Done!'));
 });
 

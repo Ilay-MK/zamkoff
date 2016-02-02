@@ -1,20 +1,68 @@
 @charset "UTF-8";
 
 %font-base {
-    color: map-get($colors, "chl");
-    font-family: 'HelveticaNeue-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: map-get($colors, "cbd");
+    font-family: 'HelveticaRegular', 'HelveticaNeue-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.25px;
+}
+
+%font-heading {
+    color: map-get($colors, "chd");
+    font-family: 'HelveticaBold', 'HelveticaNeue-Bold';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal; // bold
+    line-height: normal;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+}
+
+%font-button {
+    color: map-get($colors, "chd");
+    font-family: 'HelveticaMedium', 'HelveticaBold', 'HelveticaNeue-Bold';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400; // bold
+    line-height: normal;
+    letter-spacing: 0.25px;
+    text-transform: none;
+}
+
+%font-base-secondary {
+    color: map-get($colors, "cbl");
+    font-family: 'HelveticaLight', 'HelveticaRegular';
     font-style: normal;
     font-size: 14px;
     font-variant: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: .25px;
+    text-transform: none;
 }
-%font-heading {
-    font-family: 'HelveticaNeue-Bold';
+
+%font-clarif {
+    color: map-get($colors, "cbl");
+    font-family: 'HelveticaLightItalic', 'HelveticaLight', 'HelveticaRegular';
+    font-style: normal; // italic
     font-variant: normal;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: 400;
     line-height: normal;
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
+    text-transform: none;
+}
+
+%font-nav {
+    color: map-get($colors, "cbgd");
+    font-family: 'OpenSansBold', 'HelveticaMedium', 'HelveticaBold', 'HelveticaNeue-Bold';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400; // bold
+    line-height: normal;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
 }

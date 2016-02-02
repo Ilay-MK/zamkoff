@@ -20,6 +20,7 @@ html {
 /* Custom */
 body {
     @extend %font-base;
+    min-width: 970px;
 }
 
 a {

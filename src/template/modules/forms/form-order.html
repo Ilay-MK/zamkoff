@@ -1,5 +1,5 @@
-<div class="form-order">
-    <form action="javascript:void(0);" class="order" id="form__modal" method="post">
+<div class="form-order" id="form-order">
+    <form action="javascript:ajax('#form__modal');" class="order" id="form__modal" method="post">
         <div class="form-order--title">
             <h4>Форма заявки</h4>
         </div>
@@ -11,6 +11,6 @@
             <p class="txt">Мы перезвоним через 4 минуты.</p>
             <button type="submit" class="btn btn-warning">Отправить</button>
         </div>
-        <input type="hidden" name="from_section" value="Modal - Оставить заявку" />
+        <input type="hidden" name="from_section" id="from_section" value="Modal - Оставить заявку" />
     </form>
 </div>
