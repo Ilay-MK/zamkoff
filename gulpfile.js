@@ -168,14 +168,14 @@ gulp.task('build:image_prettyPhoto', function () {
         .pipe(notify('build:image_prettyPhoto Done!'));
 });
 
-gulp.task('build:image', ['build:image_prettyPhoto'], function () {
+gulp.task('build:image', function () {
     gulp.src(path.src.img)
-        .pipe(imagemin({
+        /*.pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()],
             interlaced: true
-        }))
+        }))*/
         .pipe(gulp.dest(path.build.img))
         .pipe(reload({stream: true}))
         .pipe(notify('build:image Done!'));
@@ -184,24 +184,28 @@ gulp.task('build:image', ['build:image_prettyPhoto'], function () {
 gulp.task('build:fonts-awesome', function () {
     gulp.src(path.fontAwesomeFonts)
         .pipe(gulp.dest(path.build.fonts))
+        .pipe(reload({stream: true}))
         .pipe(notify('build:fonts-awesome Done!'));
 });
 
 gulp.task('build:fonts', function () {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
+        .pipe(reload({stream: true}))
         .pipe(notify('build:fonts Done!'));
 });
 
 gulp.task('build:files', function () {
     gulp.src(path.src.files)
         .pipe(gulp.dest(path.build.files))
+        .pipe(reload({stream: true}))
         .pipe(notify('build:files Done!'));
 });
 
 gulp.task('build:libs', function () {
     gulp.src(path.src.libs)
         .pipe(gulp.dest(path.build.libs))
+        .pipe(reload({stream: true}))
         .pipe(notify('build:libs Done!'));
 });
 
@@ -226,9 +230,9 @@ gulp.task('watch', function () {
     watch([path.watch.js], function (event, cb) {
         gulp.start('build:js');
     });
-    watch([path.watch.img_prettyPhoto], function (event, cb) {
+    /*watch([path.watch.img_prettyPhoto], function (event, cb) {
         gulp.start('build:image_prettyPhoto');
-    });
+    });*/
     watch([path.watch.img], function (event, cb) {
         gulp.start('build:image');
     });

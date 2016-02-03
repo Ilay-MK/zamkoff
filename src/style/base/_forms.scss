@@ -26,17 +26,18 @@ input {
 }
 
 button, a.btn {
-    border: 0px solid buttonface;
+    border: 1px solid buttonface;
     //border-color: map-get($colors, "corporate-normal");
     //border-radius: 0.3em; /*4px;*/
-    border-radius: 3px;
+    border-radius: 2px;
     background-color: map-get($colors, "cl");
     //height: 2.35em; //44px
     //margin: 0px 0.3em; //0 5px
     //padding: 0.1em 0.45em; //1px 6px //0.35em
     //padding: 8px 6px 6px 6px; // 6px 12px
-    padding: 6px;
-    width: 160px;
+    color: #23231e;
+    font-size: 12px;
+    padding: 5px 11px;
     text-align: center;
     line-height: 20px;
     vertical-align: middle;
@@ -58,8 +59,20 @@ button, a.btn {
 
 a.btn {
     
-    &:active {
-        border: none;
+    background-color: #fcd87e;
+    border: 1px solid #fabe28;
+    color: #23231e;
+
+    &:hover {
+        background-color: #fabe28;
+        border: 1px solid #fabe28;
+        color: #23231e;
+    }
+
+    &:active, &:visited {
+        background-color: #fab728;
+        border: 1px solid #fab728;
+        outline: none;
     }
 }
 
