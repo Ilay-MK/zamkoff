@@ -36,7 +36,7 @@
         }
 
         &.about {
-            width: 300px;
+            width: 280px;
 
             .logo {
                 margin-bottom: 18px;
@@ -46,6 +46,7 @@
                     color: map-get($colors, "chl");
                     font-size: 22px;
                     line-height: 28px;
+                    letter-spacing: 0.25px;
                     margin: 0;
                     padding: 0;
 
@@ -69,8 +70,8 @@
         }
 
         &.navigation {
-            margin-bottom: -18px;
-            width: 375px;
+            /*margin-bottom: -18px;*/
+            /*width: 375px;*/
 
             nav {
                 display: inline-block;
@@ -80,14 +81,15 @@
                     list-style-image: url(../img/footer/nav/arrow.png);
 
                     li {
-
+                        margin-bottom: 15px;
                     }
                 }
             }
         }
 
         &.contacts {
-            margin-bottom: -18px;
+            /*margin-bottom: -18px;*/
+            margin-right: 83px;
 
             ul {
                 list-style: none;
@@ -98,26 +100,22 @@
                     /*margin-bottom: 10px;*/
                     /*margin-top: -7px;*/
                     display:block;
-                    margin-bottom: 8px;
-                    padding: 5px 0px 5px 45px;
-
+                    margin-bottom: 5px;
+                    padding: 5px 0px 5px 36px;
+                    
                     &:nth-child(1) {
-                        /*list-style-image: url(../img/footer/contacts/location.png);*/
-                        background: url(../img/footer/contacts/location.png) no-repeat 0 50%;
-                    }
-                    &:nth-child(2) {
                         /*list-style-image: url(../img/footer/contacts/phone.png);*/
                         background: url(../img/footer/contacts/phone.png) no-repeat 0 50%;
                     }
-                    &:nth-child(3) {
+                    &:nth-child(2) {
                         /*list-style-image: url(../img/footer/contacts/letter.png);*/
                         background: url(../img/footer/contacts/letter.png) no-repeat 0 50%;
                     }
-                    &:nth-child(4) {
-                        /*list-style-image: url(../img/footer/contacts/old_phone.png);*/
-                        background: url(../img/footer/contacts/old_phone.png) no-repeat 0 50%;
+                    &:nth-child(3) {
+                        /*list-style-image: url(../img/footer/contacts/location.png);*/
+                        background: url(../img/footer/contacts/location.png) no-repeat 0 50%;
                     }
-                    &:nth-child(5) {
+                    &:nth-child(4) {
                         /*list-style-image: url(../img/footer/contacts/clock.png);*/
                         background: url(../img/footer/contacts/clock.png) no-repeat 0 50%;
                     }
