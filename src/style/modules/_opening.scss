@@ -2,15 +2,25 @@
 
 .opening {
     overflow: hidden;
+    padding: 85px 0 81px;
 
     .title {
         
         &_n {
-            margin-bottom: 80px;
+            margin-bottom: 44px;
 
             img {
                 height: 42px;
                 width: 257.5px;
+            }
+            
+            &_car {
+                margin-bottom: 46px;
+                
+                img {
+                    height: 40px;
+                    width: 211.5px;
+                }
             }
         }
     }
@@ -129,6 +139,23 @@
                 
                 &.pass {
                     background-image: url(../img/opening/door/pass_s.png);
+                }
+                
+                /* CAR */
+                &.charge {
+                    background-image: url(../img/opening/car/charge_s.png);
+                }
+                
+                &.replace {
+                    background-image: url(../img/opening/car/replace_s.png);
+                }
+                
+                &.key_chip {
+                    background-image: url(../img/opening/car/key_chip_s.png);
+                }
+                
+                &.rem_alarm {
+                    background-image: url(../img/opening/car/rem_alarm_s.png);
                 }
             }
 
