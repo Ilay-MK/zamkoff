@@ -12,7 +12,7 @@
     width: 100%;
     z-index: 999;
 
-    @extend .overlay70;
+    @extend .overlay70 !optional;
     margin: 0px;
 
     .mess {

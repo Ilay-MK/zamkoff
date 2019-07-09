@@ -7,18 +7,7 @@ $(function() {
 })
 
 $(document).ready(function() {
-
-    // Ajax send mail
-    /*$(".order").submit(function () {
-        ajax(this);
-	});
-    */
-    // Подмена значения из какого блока кликают
-    $(".fancybox").click(function () {
-        /*alert($(this).attr("section"));*/
-        $("#form-order").find("#from_section").val($(this).attr("section"));
-    });
-
+    
 });
 
 function ajax(ob) {
@@ -38,8 +27,7 @@ function ajax(ob) {
 			setTimeout(function () {
 				$(result).html(xhr, str);
 				$(result).animate({
-					opacity: 1,
-					height: 'toggle'
+					opacity: 1
 				}, 1000, function () {});
 			}, 700);
 		}
@@ -63,42 +51,26 @@ function ajax(ob) {
 	return false;
 }
 
-// create social networking pop-ups
 (function() {
-	// link selector and pop-up window size
 	var Config = {
 		Link: "a.share",
 		Width: 500,
 		Height: 500
 	};
 
-	// add handler links
 	var slink = document.querySelectorAll(Config.Link);
 	for (var a = 0; a < slink.length; a++) {
 		slink[a].onclick = PopupHandler;
 	}
 
-	// create popup
-	function PopupHandler(e) {
-		/*var temp;
-		for(var p in e) {
-			temp += p + "; ";
-		}
-		alert(temp);
-		alert(e.currentTarget);*/
-			
+	function PopupHandler(e) {			
 		e = (e ? e : window.event);
 		
-		/*var t = (e.target ? e.target : e.srcElement);*/
 		var t = e.currentTarget;
-		
-		// popup position
 		var
 			px = Math.floor(((screen.availWidth || 1024) - Config.Width) / 2),
 			py = Math.floor(((screen.availHeight || 700) - Config.Height) / 2);
 
-		/*alert(t.href);*/
-		// open popup
 		var popup = window.open(t.href, "social", 
 			"width="+Config.Width+",height="+Config.Height+
 			",left="+px+",top="+py+
