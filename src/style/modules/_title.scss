@@ -5,6 +5,15 @@
     padding-left: 10px;
     margin-bottom: 50px;
 
+    &_n {
+        margin-bottom: 80px;
+
+        img {
+            height: 40px;
+            width: 297.5px;
+        }
+    }
+
     h2 {
         color: map-get($colors, "chd");
         line-height: 20px;

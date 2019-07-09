@@ -3,6 +3,19 @@
 #sale {
     background-color: map-get($colors, "cbgd");
     color: map-get($colors, "cbd");
+    padding: 85px 0;
+
+    .title {
+        
+        &_n {
+            margin-bottom: 27px;
+
+            img {
+                height: 40px;
+                width: 338.5px;
+            }
+        }
+    }
 
     .visual {
         margin-bottom: -6.428571428571429em;
@@ -10,6 +23,8 @@
 
         img {
             margin-right: 42px;
+            height: 183px; /*270px*/
+            width: 341px; /*332px*/
 
             /* Medium Devices, Desktops */
             /*@media only screen and (max-width : 991px) {
@@ -48,10 +63,34 @@
 
         .desc {
             color: map-get($colors, "cbl");
-            margin-bottom: 22px;
+            margin-bottom: 20px;
 
             p {
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.25px;
+            }
+        }
+        
+        a {
 
+            &.btn {
+                background-color: #d2a52b;
+                border: 1px solid #fabe28;
+                color: #23231e;
+                transition: all 300ms ease;
+
+                &:hover {
+                    background-color: #fabe28;
+                    border: 1px solid #fabe28;
+                    color: #23231e;
+                }
+
+                &:active, &:visited {
+                    background-color: #fab728;
+                    border: 1px solid #fab728;
+                    outline: none;
+                }
             }
         }
     }

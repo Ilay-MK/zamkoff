@@ -1,32 +1,60 @@
 @charset "UTF-8";
 
 #risks {
-    background-color: map-get($colors, "cbgd");
+    background-color: #00243c;
     color: map-get($colors, "chl");
+    padding-top: 85px;
+    padding-bottom: 70px;
 
     .title {
         margin-bottom: 70px;
+    
+        &_n {
+            margin-bottom: 80px;
+            
+            img {
+                height: 40px;
+                width: 297.5px;
+            }
+        }
     }
 
     .risk {
-        width: 273px;
+        width: auto;
+        display: inline-block;
+        vertical-align: top;
 
+        &:nth-child(1) {
+            width: 335px;
+        }
+
+        &:nth-child(2) {
+            width: 320px;
+        }
+        
         .icon {
             img {
-                height: 47px;
-                width: 40px;
+                height: 43px;
+                width: auto;
             }
         }
 
         h3 {
-            color: map-get($colors, "chl");
-            margin: 31px 0 23px;
+            color: #fefefe;
+            @extend %font-button;
+            font-size: 19px;
+            margin: 35px 0 14px;
+            line-height: 25px;
+            letter-spacing: 0.25px;
         }
 
         .desc {
+            
             p {
-                color: map-get($colors, "cbl");
-                line-height: 21px;
+                color: #c8c8c8;
+                font-size: 13px;
+                line-height: 19px;
+                letter-spacing: 0.25px;
             }
         }
 

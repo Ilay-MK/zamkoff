@@ -4,7 +4,7 @@
 
 /*    //= ../../bower_components/jquery/dist/jquery.min.js*/
 
-//= ../../bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js
+/*//= ../../bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js*/
 
 /*//= ../../bower_components/bootstrap/dist/js/bootstrap.min.js*/
 

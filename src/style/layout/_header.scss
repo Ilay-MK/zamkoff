@@ -4,7 +4,7 @@
     color: map-get($colors, "chd");
 
     .top {
-        margin-top: 55px;
+        margin-top: 60px;
 
         .logo {
 
@@ -29,6 +29,8 @@
                 img {
                     margin-right: 3px;
                     vertical-align: top;
+                    height: 22px;
+                    width: 140px;
                 }
             }
 
@@ -47,13 +49,14 @@
 
         .nav-block {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 3px;
             vertical-align: top;
 
             ul {
                 //font-family: "OpenSansBold";
                 @extend %font-nav;
                 list-style: none;
+                letter-spacing: .25px;
                 margin: 0;
                 padding: 0;
 
@@ -69,6 +72,8 @@
                         padding: 0 12px;
                         text-decoration: none;
                         text-transform: uppercase;
+                        font-weight: bold;
+                        transition: all 200ms ease;
 
                         &:hover {
                             /*outline: red 1px solid;*/
@@ -82,49 +87,84 @@
         .phone-block {
             @extend %font-nav;
             color: map-get($colors, "cbgd");
-            font-size: 13px;
+            font-size: 14px;
             
             display: inline-block;
             margin-left: 12px;
-            margin-top: 20px;
+            margin-top: 3px;
             vertical-align: top;
+            
+            &:hover .phone {
+                color: map-get($colors, "cl");
+            }
             
             .phone {
                 margin-bottom: 3px;
+                transition: all 200ms ease;
             }
 
             .order_call {
-                font-size: 9px;
+                font-size: 8px;
                 text-align: center;
 
                 a {
                     color: map-get($colors, "cbd");
                     text-decoration: underline;
                     text-transform: uppercase;
+                    
+                    &:hover {
+                        color: #797979;
+                    }
                 }
             }
         }
     }
 
     .header-content {
-        background-image: url(../img/header/lock.jpg);
+        background-image: url(../img/header/keys.png);
         background-repeat: no-repeat;
-        background-position: 100% 30%; //100% 10%;
+        background-position: 100% 94px; //100% 30%;
         background-size: 30%;
+        margin-bottom: 128px;
 
         .descripter {
             margin: 0;
 
             h1 {
-                margin: 115px 0 23px 0;
-                line-height: 36px;
+                font-size: 36px;
+                margin: 93px 0 21px 0;
+                line-height: 42px;
+                text-transform: none;
                 width: 575px;
+                letter-spacing: 0.25px;
             }
 
+            .desc_keywords {
+                color: #797979;
+                letter-spacing: 0.2px;
+                line-height: 20px;
+                margin-bottom: 26px;
+            }
+            
             a {
 
                 &.btn {
-
+                    background-color: #fcd87e;
+                    border: 1px solid #fabe28;
+                    color: #23231e;
+                    transition: all 300ms ease;
+                    
+                    &:hover {
+                        background-color: #fabe28;
+                        border: 1px solid #fabe28;
+                        color: #23231e;
+                    }
+                    
+                    &:active, &:visited {
+                        background-color: #fab728;
+                        border: 1px solid #fab728;
+                        outline: none;
+                    }
                 }
             }
         }

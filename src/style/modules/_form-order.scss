@@ -3,8 +3,8 @@
 .form-order {
     background-color: map-get($colors, "cbgl");
     color: #000;
-    height: 322px;
-    padding: 45px;
+    height: 285px;
+    padding: 43px 45px;
     width: 500px;
 
     &--title {
@@ -12,9 +12,12 @@
 
         h4 {
             @extend %font-base;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: normal;
             color: #000;
             font-size: 24px;
-            line-height: 20px;
+            line-height: normal;
+            letter-spacing: 0.25px;
             margin: 0;
             padding: 0;
             text-transform: none;
@@ -25,8 +28,8 @@
         margin: 10px 0;
 
         input {
-            margin: 10px 0;
-            padding: 24px 22px;
+            margin: 7px 0;
+            padding: 17px 11px;
             width: 100%;
         }
     }
@@ -37,21 +40,37 @@
         .txt {
             color: map-get($colors, "cbd");
             display: inline-block;
-            margin: 16px 0 0;
+            margin: 9px 0 0;
         }
 
         button[type="submit"] {
-            color: map-get($colors, "chd");
-            background-color: map-get($colors, "cl");
             height: auto;
-            font-family: 'HelveticaNeue-Bold';
+            font-family: "HelveticaMedium";
             font-size: 14px;
-            font-weight: bold;
             float: right;
-            line-height: 33px;
             margin: 0;
+            padding: 7px 12px;
             text-transform: none;
-            width: 135px;
+            width: 113px;
+            
+            &.btn {
+                background-color: #f7d379;
+                border: 1px solid #fabe28;
+                color: #23231e;
+                transition: all 300ms ease;
+
+                &:hover {
+                    background-color: #fabe28;
+                    border: 1px solid #fabe28;
+                    color: #23231e;
+                }
+
+                &:active, &:visited {
+                    background-color: #fab728;
+                    border: 1px solid #fab728;
+                    outline: none;
+                }
+            }
         }
     }
 }

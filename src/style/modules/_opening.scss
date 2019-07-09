@@ -2,9 +2,31 @@
 
 .opening {
     overflow: hidden;
+    padding: 85px 0 81px;
 
+    .title {
+        
+        &_n {
+            margin-bottom: 44px;
+
+            img {
+                height: 42px;
+                width: 257.5px;
+            }
+            
+            &_car {
+                margin-bottom: 46px;
+                
+                img {
+                    height: 40px;
+                    width: 211.5px;
+                }
+            }
+        }
+    }
+    
     .visual {
-        border: map-get($colors, "cl") 8px solid;
+        /*border: map-get($colors, "cl") 8px solid;*/
         display: inline-block;
         height: 350px;
         vertical-align: middle;
@@ -15,6 +37,8 @@
             /*max-height: 334px;
             max-width: 249px;*/
             padding: 0;
+            height: 350px;
+            width: 265px;
 
             /* Medium Devices, Desktops */
             /*@media only screen and (max-width : 991px) {
@@ -61,46 +85,102 @@
         vertical-align: middle;
 
         .service {
-            background-color: map-get($colors, "cbge");
+            /*background-color: map-get($colors, "cbge");*/
             display: inline-block;
             margin: 4px 2px;
             /*padding: 17px 11px;*/
-            padding: 15px 10px; //11px
+            /*padding: 15px 10px;*/ //11px
             text-align: center;
             width: 209px;
+            height: 171px;
+            vertical-align: top;
 
+            &:hover {
+                .icon {
+                    background-position: 0 -44px;
+                }
+            }
+            
             .icon {
-                margin: 10px 0px 23px;
+                margin: 28px 0 27px;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                height: 43px;
+                width: 209px;
+                transition: all 500ms cubic-bezier(0,1.61,1,1.81);
 
                 img {
                     display: block;
-                    height: 44px;
+                    height: 43px;
                     margin: 0 auto;
                     padding: 0;
-                    /*width: 44px;*/
+                    width: 209px;
+                }
+                
+                &.doorhandle {
+                    background-image: url(../img/opening/door/doorhandle_s.png);
+                }
+                
+                &.lock {
+                    background-image: url(../img/opening/door/lock_s.png);
+                }
+                
+                &.repair {
+                    background-image: url(../img/opening/door/repair_s.png);
+                }
+                
+                &.safe {
+                    background-image: url(../img/opening/door/safe_s.png);
+                }
+                
+                &.keys {
+                    background-image: url(../img/opening/door/keys_s.png);
+                }
+                
+                &.pass {
+                    background-image: url(../img/opening/door/pass_s.png);
+                }
+                
+                /* CAR */
+                &.charge {
+                    background-image: url(../img/opening/car/charge_s.png);
+                }
+                
+                &.replace {
+                    background-image: url(../img/opening/car/replace_s.png);
+                }
+                
+                &.key_chip {
+                    background-image: url(../img/opening/car/key_chip_s.png);
+                }
+                
+                &.rem_alarm {
+                    background-image: url(../img/opening/car/rem_alarm_s.png);
                 }
             }
 
             h3 {                
-                color: map-get($colors, "chd");
-                font-family: 'HelveticaRegular', 'HelveticaNeue-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+                color: #373737;
+                font-family: 'HelveticaMedium', 'HelveticaBold', 'HelveticaNeue-Bold';
                 font-style: normal;
-                font-size: 12px;
+                font-size: 13px;
                 font-variant: normal;
-                font-weight: 700;
+                font-weight: normal;
                 line-height: normal;
                 letter-spacing: 0.25px;
                 
-                margin: 23px 0px 8px;
+                margin: 23px 0px 4px;
             }
 
             .desc {
-
+                
+                
                 p {
                     @extend %font-base;
-                    color: map-get($colors, "cbd");
-                    font-size: 12px;
+                    color: #797979;
+                    font-size: 13px;
                     margin: 0;
+                    line-height: normal;
                     text-transform: lowercase;
                 }
             }
